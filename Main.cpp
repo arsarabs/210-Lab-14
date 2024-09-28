@@ -2,6 +2,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // ASSIGNMENT INSTRUCTIONS!!!!
@@ -36,3 +37,22 @@ public:
 
 	void print() const; // print() method
 };
+
+// STEP #2:	Now, let's define some functions. The constructor, color(), which initializes our values and returns nothing
+Color::Color(int r, int g, int b): red(r), green(g), blue(b) {}
+
+//SETTERS
+void Color::setRed(int r) { red = r; }
+void Color::setGreen(int g) { green = g; }
+void Color::setBlue(int b) { blue = b; }
+
+//GETTERS
+int Color::getRed()const { return red; }
+int Color::getGreen()const { return green; }
+int Color::getBlue()const { return blue; }
+
+//PRINT() - simply prints teh color object in a nice format, and doesn't return anything
+void Color::print() const {
+	cout << "Color: (" << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
+}
+
