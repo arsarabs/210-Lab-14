@@ -1,16 +1,8 @@
 //COMSC-210 | Lab 14: Color Class | Anthony R. Sarabia
 
-
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
-// ASSIGNMENT INSTRUCTIONS!!!!
-//Create a Color class that has as its private member variables three integers representing the red, green, and blue values of that color.
-//Code normal setter& getter member functions.Also code a member print() method to print the object data.
-//In main(), create several Color objects, populate them with data, and output their values to the console in neatly 
-//- formatted output using the object's print() method.
-//Commit your code every ten minutes while working.Set a timer.
 
 //Const variable for formatting
 const int WIDTH = 3;
@@ -67,7 +59,6 @@ int main() {
 	testingColor(); // call function in main
 	return 0;
 }
-
 
 //STEP #3b: Function Definition for testingColor() - the purpose of this function is to create/test many Color objects
 void testingColor() {
