@@ -15,7 +15,8 @@ using namespace std;
 //Const variable for formatting
 const int WIDTH = 3;
 
-//STEP #3a: Function prototype for testingColor() - the purpose of this function
+//STEP #3a: Function prototype for testingColor() - the purpose of this function is to create/test many Color objects
+void testingColor();
 
 //STEP #1: Let's create that color class
 
@@ -58,6 +59,18 @@ int Color::getBlue()const { return blue; }
 //PRINT() - simply prints teh color object in a nice format, and doesn't return anything
 
 void Color::print() const {
-	cout << "Color: (" << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
+	cout << "Color: (RED, GREEN, BLUE) " << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
 }
 
+
+
+//STEP #3b: Function Definition for testingColor() - the purpose of this function is to create/test many Color objects
+void testingColor() {
+	Color firstColor;
+	Color secondColor(714, 0, 0);
+	Color thirdColor(0, 714, 0);
+	Color fourthColor(0, 0, 714);
+	Color fifthColor(7, 1, 4);
+
+
+}
