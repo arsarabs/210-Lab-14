@@ -59,7 +59,7 @@ int Color::getBlue()const { return blue; }
 //PRINT() - simply prints teh color object in a nice format, and doesn't return anything
 
 void Color::print() const {
-	cout << "Color: (RED, GREEN, BLUE) " << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
+	cout << "Color: (RED, GREEN, BLUE) -> ("  << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << "" << ")" << endl;
 }
 
 //STEP #4: main()
@@ -74,21 +74,26 @@ void testingColor() {
 
 	//Let's create a few Color objects
 	Color firstColor;
-	Color secondColor(714, 0, 0);
-	Color thirdColor(0, 714, 0);
-	Color fourthColor(0, 0, 714);
+	Color secondColor(1, 0, 0);
+	Color thirdColor(0, 2, 0);
+	Color fourthColor(0, 0, 3);
 	Color fifthColor(7, 1, 4);
 
 	//And we'll choose the first color to populate using setters
-	firstColor.setRed(84);
-	firstColor.setGreen(123);
-	firstColor.setBlue(4);
+	firstColor.setRed(9);
+	firstColor.setGreen(8);
+	firstColor.setBlue(6);
 
 	//Now, let's test
-	cout << "TESTING COLOR CLASS:" << endl;
+	cout << "TESTING COLOR CLASS" << endl;
+	cout << endl;
+
 	firstColor.print();
 	secondColor.print();
 	thirdColor.print();
 	fourthColor.print();
 	fifthColor.print();
+
+	cout << endl;
+	cout << "COLOR CLASS TESTED" << endl;
 }
