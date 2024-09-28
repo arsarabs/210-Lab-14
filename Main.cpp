@@ -62,15 +62,33 @@ void Color::print() const {
 	cout << "Color: (RED, GREEN, BLUE) " << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
 }
 
+//STEP #4: main()
+int main() {
+	testingColor(); // call function in main
+	return 0;
+}
 
 
 //STEP #3b: Function Definition for testingColor() - the purpose of this function is to create/test many Color objects
 void testingColor() {
+
+	//Let's create a few Color objects
 	Color firstColor;
 	Color secondColor(714, 0, 0);
 	Color thirdColor(0, 714, 0);
 	Color fourthColor(0, 0, 714);
 	Color fifthColor(7, 1, 4);
 
+	//And we'll choose the first color to populate using setters
+	firstColor.setRed(84);
+	firstColor.setGreen(123);
+	firstColor.setBlue(4);
 
+	//Now, let's test
+	cout << "TESTING COLOR CLASS:" << endl;
+	firstColor.print();
+	secondColor.print();
+	thirdColor.print();
+	fourthColor.print();
+	fifthColor.print();
 }
