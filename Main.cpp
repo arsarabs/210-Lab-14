@@ -12,6 +12,10 @@ using namespace std;
 //- formatted output using the object's print() method.
 //Commit your code every ten minutes while working.Set a timer.
 
+//Const variable for formatting
+const int WIDTH = 3;
+
+//STEP #3a: Function prototype for testingColor() - the purpose of this function
 
 //STEP #1: Let's create that color class
 
@@ -52,6 +56,7 @@ int Color::getGreen()const { return green; }
 int Color::getBlue()const { return blue; }
 
 //PRINT() - simply prints teh color object in a nice format, and doesn't return anything
+
 void Color::print() const {
 	cout << "Color: (" << setw(WIDTH) << red << ", " << setw(WIDTH) << green << ", " << setw(WIDTH) << blue << ", " << ")" << endl;
 }
